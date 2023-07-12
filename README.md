@@ -1,0 +1,3 @@
+# PhatTrienDuAnThuongMaiDienTu tren kubernetes
+
+# KubernetesShop
