@@ -13,7 +13,7 @@ import springboot.entity.UserKHEntity;
 
 public interface UserKHRepository extends JpaRepository<UserKHEntity, String>{
 	@Query(
-			  value = "SELECT * from USERKH user where STATUS = 1", 
+			  value = "SELECT * from userkh user where STATUS = 1", 
 			  nativeQuery = true)
 	List<UserKHEntity> findAllActive();
 	UserKHEntity findByUserNameAndPasswdAndStatus(String userName, String passwd,int status);

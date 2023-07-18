@@ -13,7 +13,7 @@ import springboot.entity.KhachHangEntity;
 
 public interface KhachHangRepository extends JpaRepository<KhachHangEntity, Long>{
 	@Query(
-			  value = "SELECT * FROM KHACHHANG item WHERE TRANGTHAI = 1", 
+			  value = "SELECT * FROM khachhang item WHERE TRANGTHAI = 1", 
 			  nativeQuery = true)
 	List<KhachHangEntity> findAllActive();
 
