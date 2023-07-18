@@ -18,7 +18,7 @@ COPY target/$APP_NAME.jar $APP_HOME
 
 # Thiết lập thư mục làm việc và cổng mặc định của ứng dụng
 WORKDIR $APP_HOME
-EXPOSE 8081 3306
+EXPOSE 8081
 
 
 # Chạy ứng dụng khi container được khởi động
