@@ -12,7 +12,6 @@ springboot/repository/TuKhoaRepository.class
 springboot/repository/GioHangRepository.class
 springboot/entity/SanPhamEntity.class
 springboot/repository/KhachHangRepository.class
-springboot/config/JPAConfig.class
 springboot/api/LoginAPI.class
 springboot/api/GioHangAPI.class
 springboot/repository/CTDDHRepository.class

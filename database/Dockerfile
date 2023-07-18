@@ -4,6 +4,6 @@ FROM mysql:latest
 ENV MYSQL_ROOT_PASSWORD password
 
 # Sao chép tệp SQL từ máy tính của bạn vào container
-COPY chinhsuacuoi2.sql /docker-entrypoint-initdb.d/
+COPY dataV3.sql /docker-entrypoint-initdb.d/
 
 

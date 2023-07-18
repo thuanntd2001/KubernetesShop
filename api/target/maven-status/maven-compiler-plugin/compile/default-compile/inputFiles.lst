@@ -6,7 +6,6 @@
 /home/thuannguyen/Desktop/PhatTrienDuAnThuongMaiDienTu/api/src/main/java/springboot/repository/KhachHangRepository.java
 /home/thuannguyen/Desktop/PhatTrienDuAnThuongMaiDienTu/api/src/main/java/springboot/entity/UserEntity.java
 /home/thuannguyen/Desktop/PhatTrienDuAnThuongMaiDienTu/api/src/main/java/springboot/repository/NhanVienRepository.java
-/home/thuannguyen/Desktop/PhatTrienDuAnThuongMaiDienTu/api/src/main/java/springboot/config/JPAConfig.java
 /home/thuannguyen/Desktop/PhatTrienDuAnThuongMaiDienTu/api/src/main/java/springboot/api/PhieuNhapAPI.java
 /home/thuannguyen/Desktop/PhatTrienDuAnThuongMaiDienTu/api/src/main/java/springboot/entity/DDHEntity.java
 /home/thuannguyen/Desktop/PhatTrienDuAnThuongMaiDienTu/api/src/main/java/springboot/entity/PhieuNhapEntity.java
