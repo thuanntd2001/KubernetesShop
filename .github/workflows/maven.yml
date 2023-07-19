@@ -31,7 +31,7 @@ jobs:
         cache: maven
       #api
     - name: Build api with Maven
-      run: mvn -B package --file api/pom.xml
+      run: mvn clean install --file api/pom.xml
       #web
     - name: Build web with Maven
       run: mvn -B package --file KinhDoanhIOT/pom.xml
