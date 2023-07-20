@@ -4,3 +4,4 @@ metadata:
   name: csdl-configmap
 data:
   database_url: csdl-service
+  api_url: api-service
