@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: csdl
-        image: thuanntd2001/csdl:1.1
+        image: thuanntd2001/csdl:latest
         ports:
         - containerPort: 3306
         env:

@@ -14,7 +14,7 @@ public class RestClient {
 	@Autowired
 	//String API_SERVER = env.getProperty("API_SERVER");
 	String API_SERVER = System.getenv("API_SERVER");
-	private String server = "http://" + API_SERVER;
+	private String server = "http://" + API_SERVER + ":8081";
 	// private String server = "http://localhost:8081";
 	private RestTemplate rest;
 	private HttpHeaders headers;

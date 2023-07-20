@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: thuanntd2001/api:1.1
+        image: thuanntd2001/api:latest
         ports:
         - containerPort: 8081
         env:
