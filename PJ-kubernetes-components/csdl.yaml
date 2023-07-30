@@ -19,6 +19,15 @@ spec:
         image: thuanntd2001/csdl:latest
         ports:
         - containerPort: 3306
+        volumeMounts:
+        - name: mysql-persistent-storage
+          mountPath: /var/lib/data
+        volumes:
+        - name: mysql-persistent-storage
+          persistentVolumeClaim:
+            claimName: mysql-pv-claim
+        
+
         env:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom: 
