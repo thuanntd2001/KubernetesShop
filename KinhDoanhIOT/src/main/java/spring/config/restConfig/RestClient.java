@@ -22,6 +22,9 @@ public class RestClient {
 
 	public RestClient() {
 		this.rest = new RestTemplate();
+		
+		rest.getInterceptors().add(new BasicAuthInterceptor("admin", "admin"));
+		
 		this.headers = new HttpHeaders();
 		headers.add("Content-Type", "application/json;charset=UTF-8");
 		headers.add("Accept", "*/*");

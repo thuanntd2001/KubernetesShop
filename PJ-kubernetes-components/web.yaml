@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: thuanntd2001/web:latest
+        image: thuanntd2001/web:v2
         ports:
         - containerPort: 8080
         env:

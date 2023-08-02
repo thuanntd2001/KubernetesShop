@@ -14,6 +14,11 @@ spec:
       labels:
         app: csdl
     spec:
+
+      volumes:
+      - name: mysql-persistent-storage
+        persistentVolumeClaim:
+          claimName: mysql-pv-claim
       containers:
       - name: csdl
         image: thuanntd2001/csdl:latest
@@ -22,12 +27,6 @@ spec:
         volumeMounts:
         - name: mysql-persistent-storage
           mountPath: /var/lib/data
-        volumes:
-        - name: mysql-persistent-storage
-          persistentVolumeClaim:
-            claimName: mysql-pv-claim
-        
-
         env:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom: 
