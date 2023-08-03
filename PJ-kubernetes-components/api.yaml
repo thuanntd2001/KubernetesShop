@@ -35,6 +35,11 @@ spec:
             configMapKeyRef:
               name: csdl-configmap
               key: database_url
+        - name: API_SERVER
+          valueFrom: 
+            configMapKeyRef:
+              name: csdl-configmap
+              key: api_url
 ---
 apiVersion: v1
 kind: Service

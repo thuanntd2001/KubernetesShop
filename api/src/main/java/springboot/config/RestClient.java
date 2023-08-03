@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 
 public class RestClient {
 
-//	  private String server = "http://localhost:8081";
+	 // private String server = "http://localhost:8081";
 	String API_SERVER = System.getenv("API_SERVER");
 	private String server = "http://" + API_SERVER + ":8081";
 	private RestTemplate rest;
