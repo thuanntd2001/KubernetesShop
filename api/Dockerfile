@@ -1,5 +1,5 @@
 # Sử dụng image mở rộng của Java 8
-FROM openjdk:11-jdk-alpine
+FROM openjdk:11
 
 # Thêm các biến môi trường cho ứng dụng
 ENV APP_HOME=/app
