@@ -43,7 +43,7 @@
 				<div class="card-header">
 					<img style="height: 50px; width: 50px; text-align: center;"
 						src="<c:url value='/common/images/logo.webp'/>" alt="highland">
-					Đăng Nhập IOT Shop
+					Khách hàng IOT Shop
 
 				</div>
 				<c:if test="${not empty message}">
