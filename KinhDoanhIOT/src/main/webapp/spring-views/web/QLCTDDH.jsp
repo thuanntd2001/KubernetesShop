@@ -63,7 +63,7 @@ body {
 									<td>${ctddh.sanPham }</td>
 									<td>${ctddh.tenSP }</td>
 									<td>${ctddh.soLuong }</td>
-									<td id="tongtien">${ctddh.tongTien}đồng</td>
+									<td id="tongtien">${ctddh.tongTien} đồng</td>
 								</tr>
 							</c:forEach>
 

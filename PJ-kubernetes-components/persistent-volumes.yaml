@@ -10,5 +10,5 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: local-storage
   hostPath:
-    path: /home/thuannguyen/Desktop/PhatTrienDuAnThuongMaiDienTu/mysql_data/
+    path: /home/thuannguyen/Desktop/kubernetes/mysql_data
 

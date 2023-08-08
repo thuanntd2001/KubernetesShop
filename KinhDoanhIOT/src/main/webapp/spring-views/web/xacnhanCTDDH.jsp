@@ -57,15 +57,13 @@ body {
 							</tr>
 						</thead>
 						<tbody>
-							<c:forEach var="cthd" items="${chiTiet}">
+							<c:forEach var="ctddh" items="${chiTiet}">
 								<tr>
-									<td>${cthd.ddh }</td>
-									<td>${cthd.sanPham }</td>
-									<td>
-										<%-- ${cthd.soLuong } --%>
-									</td>
-									<td>${cthd.soLuong }</td>
-									<td id="tongtien">${cthd.tongTien}đồng</td>
+									<td>${ctddh.ddh }</td>
+									<td>${ctddh.sanPham }</td>
+									<td>${ctddh.tenSP }</td>
+									<td>${ctddh.soLuong }</td>
+									<td id="tongtien">${ctddh.tongTien}đồng</td>
 								</tr>
 							</c:forEach>
 

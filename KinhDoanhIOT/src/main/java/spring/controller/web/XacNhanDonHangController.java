@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.quancafehighland.utils.SessionUtil;
 
+import spring.bean.APIFunction;
 import spring.bean.Collector;
 import spring.dto.CTDDHDTO;
 import spring.dto.DDHDTO;
@@ -48,7 +49,9 @@ public class XacNhanDonHangController {
 	public <E> String xemChiTietDDH(HttpServletRequest request, ModelMap model, @PathVariable("id") Long id) {
 		List<CTDDHDTO> cthds = this.getCtDDHs(id);
 
-		
+		for (CTDDHDTO ct : cthds) {
+			ct.setTenSP(APIFunction.getSP(ct.getSanPham()).getTen());
+		}
 		  model.addAttribute("chiTiet", cthds);
 		 
 		int tong = 0;
