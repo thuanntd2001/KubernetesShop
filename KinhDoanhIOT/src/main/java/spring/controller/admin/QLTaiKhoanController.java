@@ -191,9 +191,9 @@ public class QLTaiKhoanController {
 			e.printStackTrace();
 		}
 		UserDTO ss = new UserDTO();
-		for (int i = 0; i < list.size(); i++) {
-			if (list.get(i).getID() == manv)
-				ss = list.get(i);
+		for (UserDTO element : list) {
+			if (element.getID() == manv)
+				ss = element;
 			break;
 		}
 

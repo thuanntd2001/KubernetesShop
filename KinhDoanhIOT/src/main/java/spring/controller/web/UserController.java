@@ -82,7 +82,6 @@ public class UserController {
 	public Integer changePW(HttpServletRequest request,String password,
 			String newpassword, String renewpassword) {
 		LoginDTO user1 = (LoginDTO) SessionUtil.getInstance().getValue(request, "USERMODEL");
-		String id = user1.getUserName();
 		if (password.equals(user1.getPasswd()) && !newpassword.isEmpty() && !renewpassword.isEmpty()
 				&& newpassword.equals(renewpassword)) {
 			UserDTO user2 = new UserDTO();

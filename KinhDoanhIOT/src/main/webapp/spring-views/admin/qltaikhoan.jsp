@@ -125,7 +125,7 @@
 
 									
 
-								</div> <!-- Modal -->
+								 <!-- Modal -->
 								<div class="modal fade" id="n1-${tk.userName}" tabindex="-1"
 									role="dialog" aria-labelledby="exampleModalLabel"
 									aria-hidden="true">

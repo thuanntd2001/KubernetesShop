@@ -11,12 +11,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.quancafehighland.utils.SessionUtil;
-
 import spring.bean.APIFunction;
 import spring.bean.GioHangForm;
 import spring.dto.GioHangDTO;
-import spring.dto.LoginKHDTO;
 import spring.dto.SanPhamDTO;
 
 @Controller
@@ -25,7 +22,7 @@ public class ThanhToanController {
 	@RequestMapping(value = "KHthanhtoan", method = RequestMethod.POST)
 	public String index(HttpServletRequest request, ModelMap model, @ModelAttribute("gh") GioHangForm gh1) {
 		int tong = 0;
-		LoginKHDTO kh = (LoginKHDTO) SessionUtil.getInstance().getValue(request, "USERKHMODEL");
+		
 
 		//List<GioHangDTO> gioHangs = APIFunction.getGioHangs(kh.getMaKH());
 

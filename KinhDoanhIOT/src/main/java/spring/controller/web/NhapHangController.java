@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Objects;
 import java.util.stream.Collectors;
 
 import javax.servlet.http.HttpServletRequest;
@@ -19,8 +18,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import spring.bean.Collector;
 import spring.dto.CTPNDTO;
 import spring.dto.PhieuNhapDTO;
-import spring.dto.CTPNDTO;
-import spring.dto.LoginDTO;
 @Controller
 public class NhapHangController {
 	
