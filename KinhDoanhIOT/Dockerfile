@@ -1,8 +1,7 @@
 FROM openjdk:8-alpine
 
 # Tải xuống và cài đặt Tomcat
-RUN apk add --no-cache wget \
-    && wget https://downloads.apache.org/tomcat/tomcat-8/v8.5.71/bin/apache-tomcat-8.5.71.tar.gz \
+RUN curl -O https://downloads.apache.org/tomcat/tomcat-8/v8.5.71/bin/apache-tomcat-8.5.71.tar.gz \
     && tar -xf apache-tomcat-8.5.71.tar.gz \
     && rm apache-tomcat-8.5.71.tar.gz \
     && mv apache-tomcat-8.5.71 /usr/local/tomcat
