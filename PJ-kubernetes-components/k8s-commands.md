@@ -4,7 +4,7 @@ docker save thuanntd2001/csdl:latest | (eval $(minikube docker-env) && docker lo
 docker save thuanntd2001/api:latest | (eval $(minikube docker-env) && docker load)
 docker save thuanntd2001/web:latest | (eval $(minikube docker-env) && docker load)
 ### kubectl apply commands in order
-    cd ~/Desktop/PhatTrienDuAnThuongMaiDienTu/PJ-kubernetes-components/
+    cd ~/Desktop/kubernetes/PJ-kubernetes-components/
 
     kubectl apply -f secret.yaml
     kubectl apply -f csdl.yaml

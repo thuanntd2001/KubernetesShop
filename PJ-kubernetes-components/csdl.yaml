@@ -15,18 +15,18 @@ spec:
         app: csdl
     spec:
 
-      volumes:
-      - name: mysql-persistent-storage
-        persistentVolumeClaim:
-          claimName: mysql-pv-claim
+#      volumes:
+#      - name: mysql-persistent-storage
+#        persistentVolumeClaim:
+#          claimName: mysql-pv-claim
       containers:
       - name: csdl
         image: thuanntd2001/csdl:latest
         ports:
         - containerPort: 3306
-        volumeMounts:
-        - name: mysql-persistent-storage
-          mountPath: /var/lib/data
+#        volumeMounts:
+#        - name: mysql-persistent-storage
+#          mountPath: /var/lib/data
         env:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom: 

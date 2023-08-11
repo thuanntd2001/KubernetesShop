@@ -1,9 +1,6 @@
-FROM mysql:latest
+FROM alpine:latest
 
-# Đặt mật khẩu cho người dùng root và tên người dùng/mật khẩu cho người dùng khác
-ENV MYSQL_ROOT_PASSWORD password
-
-# Sao chép tệp SQL từ máy tính của bạn vào container
+RUN apk add --no-cache mysql mysql-client
+RUN mkdir /docker-entrypoint-initdb.d
 COPY dataV3.sql /docker-entrypoint-initdb.d/
-
-
+CMD ["mysqld"]
