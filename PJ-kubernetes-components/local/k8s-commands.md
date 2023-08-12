@@ -1,17 +1,17 @@
 
 ### tao local image
-docker save csdl:lc1 | (eval $(minikube docker-env) && docker load)
-docker save api:lc1 | (eval $(minikube docker-env) && docker load)
-docker save web:lc1 | (eval $(minikube docker-env) && docker load)
+ sudo docker save csdl:lc1 | (eval $(minikube docker-env) && docker load)
+ sudo docker save api:lc1 | (eval $(minikube docker-env) && docker load)
+sudo docker save web:lc1 | (eval $(minikube docker-env) && docker load)
 ### kubectl apply commands in order
-    cd ~/Desktop/KubernetesShop/PJ-kubernetes-components/
+    cd ~/Desktop/KubernetesShop/PJ-kubernetes-components/local
 
     kubectl apply -f secret.yaml
-    kubectl apply -f csdl.yaml
+    kubectl apply -f localcsdl.yaml
     kubectl apply -f configmap.yaml 
-    kubectl apply -f api.yaml
+    kubectl apply -f lacalapi.yaml
     minikube service api-service
-    kubectl apply -f web.yaml
+    kubectl apply -f localweb.yaml
     minikube service web-service
 
 ### kubectl get commands
