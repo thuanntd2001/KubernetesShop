@@ -44,7 +44,7 @@ jobs:
       name: Build & push csdl Docker image
       with:
         image: thuanntd2001/csdl
-        tags: v2, latest
+        tags: v3, latest
         registry: docker.io
         dockerfile: database/Dockerfile
         directory: ./database
