@@ -68,7 +68,7 @@ jobs:
       name: Build & push web Docker image
       with:
         image: thuanntd2001/web
-        tags: v2, latest
+        tags: v3, latest
         registry: docker.io
         dockerfile: KinhDoanhIOT/Dockerfile
         directory: ./KinhDoanhIOT
